@@ -26,7 +26,7 @@ const activities = [
 
 const WhatWeDo = () => {
   return (
-    <div className="default-margin py-[3rem] flex flex-col gap-[2rem] justify-center items-center">
+    <div className="default-margin py-[3rem] md:py-[5rem] flex flex-col gap-[2rem] justify-center items-center">
       <p className="text-myPurple font-[600]">What we do</p>
       <h1 className="text-[28px] md:text-[48px] text-center max-w-[593px]">
         Making a Difference, One Life at a Time.
