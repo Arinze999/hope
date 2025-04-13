@@ -1,20 +1,20 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import Header from '@/components/layouts/HomeLayout/Header';
-import { Bevan, Epilogue } from 'next/font/google'
+import { Bevan, Epilogue } from 'next/font/google';
+import Footer from '@/components/layouts/Footer';
 
 const epilogue = Epilogue({
   subsets: ['latin'],
   variable: '--font-epilogue',
-  weight: '400' // or other weights
-})
+  weight: '400', // or other weights
+});
 
 const bevan = Bevan({
   subsets: ['latin'],
   variable: '--font-bevan',
-  weight: '400'
-})
-
+  weight: '400',
+});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -28,11 +28,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${epilogue.variable} ${bevan.variable} antialiased`}
-      >
+      <body className={`${epilogue.variable} ${bevan.variable} antialiased`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

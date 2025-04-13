@@ -5,7 +5,7 @@ const CompanyLogo = ({
   close,
 }: {
   textClass?: string;
-  close: () => void;
+  close?: () => void;
 }) => {
   return (
     <Link href={'/'}>

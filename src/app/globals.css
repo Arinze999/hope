@@ -26,11 +26,12 @@ h4 {
   /* ... */
 
   /* Custom Colors */
-  --color-myBlue: #043873;
+  /* --color-myBlue: #043873;
   --color-myWhite: #ffffff;
   --color-dullYellow: #ffe492;
   --color-faintBlue: #4f9cf9;
-  --color-faintBlueText: #fefefe;
+  --color-faintBlueText: #fefefe; */
+ 
 
   --color-darkBg: #211f28;
   --color-myPurple: #8e7ada;
@@ -40,6 +41,7 @@ h4 {
   --color-darkText: #18171c;
   --color-myGray2: #4f4f4f;
   --color-myGraybg: #dbdbdb;
+  --color-darkBg: #18171c;
 
   /* Custom Breakpoints */
   --breakpoint-mlg: 64rem; /* 1024px */
