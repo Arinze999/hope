@@ -11,7 +11,7 @@ const Button = ({
 }) => {
   return (
     <button
-      className={`${className} border-none rounded-xl py-[10px] px-[20px] flex justify-center items-center gap-2`}
+      className={`${className}  rounded-xl py-[10px] px-[20px] flex justify-center items-center gap-2`}
     >
       {text}
       {icon && (
