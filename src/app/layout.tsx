@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${epilogue.variable} ${bevan.variable} antialiased`}>
         <Header />
-        {children}
+        <div className="min-h-screen"> {children}</div>
         <Footer />
       </body>
     </html>

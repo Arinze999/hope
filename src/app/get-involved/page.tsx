@@ -30,6 +30,7 @@ const Cases = [
     src: '/img/involve4.png',
     text: 'Stay connected with Hope and be the first to know about our latest initiatives, success stories, and upcoming events. By subscribing to our newsletter, youll receive regular updates straight to your inbox, giving you an inside look at the impact we’re making and the lives we’re transforming.',
     button: 'Sign up',
+    last: true
   },
 ];
 
@@ -46,7 +47,7 @@ const page = () => {
           for all. Join us in our mission and make an impact today.
         </p>
       </div>
-      <div className="default-margin flex flex-col justify-center items-center gap-[6rem]">
+      <div className="default-margin flex flex-col justify-center items-center gap-[6rem] pb-[10rem]">
         {Cases.map((item, index) => (
           <Card1 {...item} key={index} />
         ))}

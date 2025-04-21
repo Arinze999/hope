@@ -10,6 +10,7 @@ import Button from '@/components/Button';
 import MobileNav from '@/components/navbar/MobileNav';
 import Image from 'next/image';
 import CompanyLogo from '@/components/CompanyLogo';
+import Link from 'next/link';
 
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -37,10 +38,12 @@ const Header = () => {
         <Nav />
         <div className="flex items-center">
           <div className="px-4 py-2 md:flex gap-2 hidden">
-            <Button
-              className="bg-myPurple text-myWhite w-[10rem]"
-              text="Donate"
-            />
+            <Link href="/donate" className="text-blue-500">
+              <Button
+                className="bg-myPurple text-myWhite w-[10rem]"
+                text="Donate"
+              />
+            </Link>
           </div>
           {navOpen ? (
             <Image

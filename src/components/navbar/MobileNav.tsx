@@ -43,7 +43,13 @@ const MobileNav: React.FC<MobileNavProps> = ({ isOpen, close }) => {
         ))}
       </ul>
       <div className="px-4 w-full py-2 flex gap-2 md:hidden">
-        <Button className="bg-myPurple text-myWhite w-full" text="Donate" />
+        <Link
+          href={'/donate'}
+          className="w-full"
+          onClick={() => handleToggle()}
+        >
+          <Button className="bg-myPurple text-myWhite w-full" text="Donate" />
+        </Link>
       </div>
     </div>
   );
