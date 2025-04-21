@@ -1,11 +1,8 @@
 'use client';
 import Button from '@/components/Button';
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
 
-const page = () => {
-  const router = useRouter();
-
+const Page = () => {
   return (
     <div className="default-margin h-full min-h-screen flex justify-center items-center">
       <div className="bg-white rounded-lg p-6 h-fit relative w-full max-w-md mx-auto flex flex-col items-center shadow">
@@ -34,4 +31,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
